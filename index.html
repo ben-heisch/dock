@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOCK Outdoors — The Overland Camp Kitchen, built into a Zarges® box</title>
+  <meta name="description" content="A handbuilt overland camp kitchen inside an indestructible Zarges® K470 aluminium box. Organic bamboo, stainless steel, ready to cook in seconds. In use on 5 continents." />
+  <meta name="theme-color" content="#14171a" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="DOCK Outdoors — The Overland Camp Kitchen" />
+  <meta property="og:description" content="Handbuilt into a Zarges® K470 box. Bamboo & stainless steel. Ready to cook in seconds. In use on 5 continents." />
+  <meta property="og:image" content="assets/img/hero-camp.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/img/logo.png" />
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__logo" aria-label="DOCK Outdoors home">
+      <img src="assets/img/logo.png" alt="DOCK Outdoors" />
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#kitchen" data-i18n="nav.kitchen">The Kitchen</a>
+      <a href="#features" data-i18n="nav.features">Features</a>
+      <a href="#gallery" data-i18n="nav.gallery">Owners</a>
+      <a href="#specs" data-i18n="nav.specs">Specs</a>
+      <a href="#accessories" data-i18n="nav.accessories">Accessories</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+    </nav>
+
+    <div class="nav__right">
+      <div class="langswitch" role="group" aria-label="Language">
+        <button data-lang="en" class="langswitch__btn">EN</button>
+        <button data-lang="de" class="langswitch__btn">DE</button>
+        <button data-lang="nl" class="langswitch__btn">NL</button>
+      </div>
+      <a class="btn btn--wa nav__cta" data-cta="whatsapp" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.2-.2.2-.3.3-.5.1-.2.1-.4 0-.5 0-.1-.6-1.5-.8-2.1-.2-.5-.4-.4-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3M12 21.5c-1.7 0-3.3-.4-4.7-1.3l-3.3.9.9-3.2c-.9-1.5-1.4-3.2-1.4-4.9C3.5 7.3 7.3 3.5 12 3.5s8.5 3.8 8.5 8.5-3.8 9.5-8.5 9.5m0-19C6.2 2.5 1.5 7.2 1.5 13c0 1.8.5 3.6 1.4 5.2L1.5 23l4.9-1.3c1.5.8 3.2 1.3 5 1.3h.1c5.8 0 10.5-4.7 10.5-10.5S17.8 2.5 12 2.5"/></svg>
+        <span data-i18n="nav.cta">Get yours</span>
+      </a>
+      <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<a id="top"></a>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero__bg" style="background-image:url('assets/img/hero-camp.jpg')"></div>
+  <div class="hero__scrim"></div>
+  <div class="hero__content">
+    <p class="eyebrow" data-i18n="hero.eyebrow">Handbuilt in the Netherlands · Since 2016</p>
+    <h1 data-i18n="hero.h1">The last camp kitchen you'll ever buy.</h1>
+    <p class="hero__sub" data-i18n="hero.sub">A complete field kitchen built into an indestructible Zarges® aluminium box. Organic bamboo, stainless steel, ready to cook in seconds — engineered for overlanders and 4x4 explorers who go the distance.</p>
+    <div class="hero__cta">
+      <a class="btn btn--wa btn--lg" data-cta="whatsapp" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.2-.2.2-.3.3-.5.1-.2.1-.4 0-.5 0-.1-.6-1.5-.8-2.1-.2-.5-.4-.4-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3M12 21.5c-1.7 0-3.3-.4-4.7-1.3l-3.3.9.9-3.2c-.9-1.5-1.4-3.2-1.4-4.9C3.5 7.3 7.3 3.5 12 3.5s8.5 3.8 8.5 8.5-3.8 9.5-8.5 9.5m0-19C6.2 2.5 1.5 7.2 1.5 13c0 1.8.5 3.6 1.4 5.2L1.5 23l4.9-1.3c1.5.8 3.2 1.3 5 1.3h.1c5.8 0 10.5-4.7 10.5-10.5S17.8 2.5 12 2.5"/></svg>
+        <span data-i18n="hero.cta1">Order via WhatsApp</span>
+      </a>
+      <a class="btn btn--ghost btn--lg" data-cta="email">
+        <span data-i18n="hero.cta2">Ask a question by e-mail</span>
+      </a>
+    </div>
+    <ul class="hero__trust">
+      <li><strong>5</strong> <span data-i18n="hero.trust1">continents in the field</span></li>
+      <li><strong>Zarges®</strong> <span data-i18n="hero.trust2">K470 aircraft aluminium</span></li>
+      <li><strong>≈30s</strong> <span data-i18n="hero.trust3">from box to kitchen</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ TRUST BAR ============ -->
+<section class="trustbar">
+  <div class="trustbar__inner">
+    <div class="trustbar__item"><span class="trustbar__ico">🛡️</span><span data-i18n="trust.a">Indestructible Zarges® shell</span></div>
+    <div class="trustbar__item"><span class="trustbar__ico">🌍</span><span data-i18n="trust.b">Shipped worldwide</span></div>
+    <div class="trustbar__item"><span class="trustbar__ico">✅</span><span data-i18n="trust.c">CE-regulated manufacturing</span></div>
+    <div class="trustbar__item"><span class="trustbar__ico">🤝</span><span data-i18n="trust.d">Personal, direct contact</span></div>
+    <div class="trustbar__item"><span class="trustbar__ico">♾️</span><span data-i18n="trust.e">Built to last a lifetime</span></div>
+  </div>
+</section>
+
+<!-- ============ KITCHEN / INTRO ============ -->
+<section class="section section--dark" id="kitchen">
+  <div class="wrap grid2">
+    <div class="grid2__media">
+      <img src="assets/img/kitchen-open.png" alt="DOCK camp kitchen fully deployed with bamboo worktop, stainless steel side shelves and drawer" class="floatimg" />
+    </div>
+    <div class="grid2__text">
+      <p class="eyebrow" data-i18n="kitchen.eyebrow">The DOCK Camp Kitchen</p>
+      <h2 data-i18n="kitchen.h2">A real kitchen. Anywhere the track ends.</h2>
+      <p data-i18n="kitchen.p1">Cheap folding camp kitchens rattle apart on the first corrugated road. The DOCK is different: a fully-equipped cooking station built inside a genuine Zarges® K470 expedition case — the same aluminium box that survives the world's toughest expeditions.</p>
+      <p data-i18n="kitchen.p2">Open it, drop the legs, fold out the bamboo worktop and stainless shelves, and you have a stable, waist-high kitchen with a place for every pot, plate and utensil. Close it, and everything you own travels safely inside one rugged, stackable box.</p>
+      <ul class="ticklist">
+        <li data-i18n="kitchen.t1">Fits the Zarges® K470 (model 40564) — legendary expedition build quality</li>
+        <li data-i18n="kitchen.t2">Organic bamboo, stainless steel & industrial aluminium — no plastic to break</li>
+        <li data-i18n="kitchen.t3">A dedicated spot for your stove, cookware, tableware and cutlery</li>
+        <li data-i18n="kitchen.t4">Just 16.5 kg empty, stacks and straps down like any expedition case</li>
+      </ul>
+      <div class="btnrow">
+        <a class="btn btn--wa" data-cta="whatsapp" target="_blank" rel="noopener"><span data-i18n="cta.whatsapp">Order via WhatsApp</span></a>
+        <a class="btn btn--outline" href="#specs" data-i18n="cta.specs">See full specs</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="section section--light" id="features">
+  <div class="wrap">
+    <div class="section__head">
+      <p class="eyebrow" data-i18n="features.eyebrow">Why owners swear by it</p>
+      <h2 data-i18n="features.h2">Every detail earns its place</h2>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <div class="feature__ico">🛡️</div>
+        <h3 data-i18n="feat1.h">Indestructible Zarges® shell</h3>
+        <p data-i18n="feat1.p">Aircraft-grade K470 aluminium. Weatherproof, impact-resistant and rigid — the box that outlives the vehicle it rides in.</p>
+      </div>
+      <div class="feature">
+        <div class="feature__ico">🎍</div>
+        <h3 data-i18n="feat2.h">Organic bamboo worktop</h3>
+        <p data-i18n="feat2.p">A warm, food-safe bamboo surface and drawer front. Fold-down worktable plus a top shelf for your stove — real space to actually cook.</p>
+      </div>
+      <div class="feature">
+        <div class="feature__ico">🔩</div>
+        <h3 data-i18n="feat3.h">Stainless steel shelves</h3>
+        <p data-i18n="feat3.p">Two detachable stainless side shelves clip on for extra work surface exactly where you need it, then stow away flat inside.</p>
+      </div>
+      <div class="feature">
+        <div class="feature__ico">🍳</div>
+        <h3 data-i18n="feat4.h">A place for everything</h3>
+        <p data-i18n="feat4.p">Separate compartments for stove, cookware and tableware, plus a bamboo cutlery drawer with organiser. Nothing rattles, nothing gets lost.</p>
+      </div>
+      <div class="feature">
+        <div class="feature__ico">⚡</div>
+        <h3 data-i18n="feat5.h">Ready in seconds</h3>
+        <p data-i18n="feat5.p">Integrated legs lift the kitchen to a comfortable 81 cm working height on any ground. From closed box to cooking in well under a minute.</p>
+      </div>
+      <div class="feature">
+        <div class="feature__ico">♾️</div>
+        <h3 data-i18n="feat6.h">Made to last a lifetime</h3>
+        <p data-i18n="feat6.p">Handbuilt in the Netherlands from materials chosen to age well, not wear out. Buy it once, pass it on to the next generation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DETAIL STRIP ============ -->
+<section class="detailstrip">
+  <figure><img src="assets/img/detail-logo-bamboo.jpg" alt="Laser-engraved DOCK logo on the bamboo panel" loading="lazy" /></figure>
+  <figure><img src="assets/img/detail-worktop.jpg" alt="Bamboo worktop with stainless cable stay" loading="lazy" /></figure>
+  <figure><img src="assets/img/detail-drawer.jpg" alt="Recessed stainless finger pull on the bamboo drawer" loading="lazy" /></figure>
+  <figure><img src="assets/img/detail-bamboo-edge.jpg" alt="Bamboo and brushed aluminium edge detail" loading="lazy" /></figure>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section section--dark" id="how">
+  <div class="wrap">
+    <div class="section__head">
+      <p class="eyebrow" data-i18n="how.eyebrow">From box to kitchen</p>
+      <h2 data-i18n="how.h2">Set up in four simple moves</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="step__n">1</div><p data-i18n="how.s1">Place the closed kitchen on firm ground and lift off the platform with the legs.</p></div>
+      <div class="step"><div class="step__n">2</div><p data-i18n="how.s2">Stand the kitchen on its platform — level and stable, wedge it if needed.</p></div>
+      <div class="step"><div class="step__n">3</div><p data-i18n="how.s3">Fold out the bamboo worktop and clip on the stainless side shelves.</p></div>
+      <div class="step"><div class="step__n">4</div><p data-i18n="how.s4">Set your stove on the top shelf and start cooking. That's it.</p></div>
+    </div>
+    <div class="how__media">
+      <img src="assets/img/kitchen-open-front.png" alt="DOCK camp kitchen open on its platform legs, front view" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOCIAL PROOF / GALLERY ============ -->
+<section class="section section--light" id="gallery">
+  <div class="wrap">
+    <div class="section__head">
+      <p class="eyebrow" data-i18n="gallery.eyebrow">Proven by owners, not by us</p>
+      <h2 data-i18n="gallery.h2">In the field on five continents</h2>
+      <p class="section__lead" data-i18n="gallery.lead">From the dunes of Saudi Arabia to Slovenian mountain lakes, Australian riverbeds and the Pacific coast — these are real DOCK kitchens, sent in by real owners.</p>
+    </div>
+
+    <div class="flags" aria-label="Countries where the DOCK kitchen is in use">
+      <span>🇳🇱</span><span>🇩🇪</span><span>🇸🇮</span><span>🇭🇷</span><span>🇮🇹</span><span>🇸🇦</span><span>🇰🇿</span><span>🇹🇭</span><span>🇲🇷</span><span>🇺🇸</span><span>🇨🇦</span><span>🇦🇺</span>
+    </div>
+
+    <div class="masonry">
+      <figure class="masonry__item"><img src="assets/img/owner-saudi.jpg" alt="DOCK kitchen with cast-iron pot in the Saudi Arabian desert" loading="lazy" /><figcaption data-i18n="g.saudi">Sahara expedition · Saudi Arabia</figcaption></figure>
+      <figure class="masonry__item"><img src="assets/img/owner-slovenia.jpg" alt="DOCK kitchen cooking at a mountain lake in Slovenia" loading="lazy" /><figcaption data-i18n="g.slovenia">Bohinj Lake · Slovenia</figcaption></figure>
+      <figure class="masonry__item"><img src="assets/img/owner-canada.jpg" alt="DOCK kitchen next to a Jeep Gladiator Rubicon on a Pacific shoreline" loading="lazy" /><figcaption data-i18n="g.canada">Pacific coast · North America</figcaption></figure>
+      <figure class="masonry__item"><img src="assets/img/owner-germany-dog.jpg" alt="DOCK kitchen beside an off-road trailer with a dog on guard, Germany" loading="lazy" /><figcaption data-i18n="g.germany">Fürsten Forest · Germany</figcaption></figure>
+      <figure class="masonry__item"><img src="assets/img/owner-spain.jpg" alt="DOCK kitchen at the back of a 4x4 Hymer van at golden hour" loading="lazy" /><figcaption data-i18n="g.spain">Overland camp · Southern Europe</figcaption></figure>
+      <figure class="masonry__item"><img src="assets/img/owner-australia.jpg" alt="DOCK kitchen by a river in the Australian bush" loading="lazy" /><figcaption data-i18n="g.australia">River camp · Australia</figcaption></figure>
+      <figure class="masonry__item"><img src="assets/img/owner-croatia.jpg" alt="Owner cooking on a DOCK kitchen beside a Mercedes G-class camper in Croatia" loading="lazy" /><figcaption data-i18n="g.croatia">Adriatic coast · Croatia</figcaption></figure>
+      <figure class="masonry__item"><img src="assets/img/owner-lake-sunset.jpg" alt="DOCK kitchen open with kettle and wine at a lakeside sunset" loading="lazy" /><figcaption data-i18n="g.lake">Sundowner by the lake · Netherlands</figcaption></figure>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><div class="stat__n">5</div><div class="stat__l" data-i18n="stat.continents">continents</div></div>
+      <div class="stat"><div class="stat__n">20+</div><div class="stat__l" data-i18n="stat.countries">countries in the field</div></div>
+      <div class="stat"><div class="stat__n">2016</div><div class="stat__l" data-i18n="stat.since">building kitchens since</div></div>
+      <div class="stat"><div class="stat__n">100%</div><div class="stat__l" data-i18n="stat.handbuilt">handbuilt to order</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPECS ============ -->
+<section class="section section--dark" id="specs">
+  <div class="wrap grid2 grid2--rev">
+    <div class="grid2__media">
+      <img src="assets/img/kitchen-closed.png" alt="DOCK camp kitchen closed, in transport mode" class="floatimg" loading="lazy" />
+    </div>
+    <div class="grid2__text">
+      <p class="eyebrow" data-i18n="specs.eyebrow">Technical specifications</p>
+      <h2 data-i18n="specs.h2">The numbers behind the box</h2>
+      <table class="spectable">
+        <tbody>
+          <tr><th data-i18n="specs.k1">Base case</th><td data-i18n="specs.v1">Zarges® K470, model 40564</td></tr>
+          <tr><th data-i18n="specs.k2">Materials</th><td data-i18n="specs.v2">Aircraft aluminium, stainless steel, organic bamboo</td></tr>
+          <tr><th data-i18n="specs.k3">Closed size (H×W×D)</th><td>420 × 600 × 400 mm</td></tr>
+          <tr><th data-i18n="specs.k4">Working height</th><td>810 mm</td></tr>
+          <tr><th data-i18n="specs.k5">Empty weight</th><td>16.5 kg</td></tr>
+          <tr><th data-i18n="specs.k6">Cookware capacity</th><td data-i18n="specs.v6">Pans up to Ø 260 mm</td></tr>
+          <tr><th data-i18n="specs.k7">Stove space</th><td data-i18n="specs.v7">Up to 520 × 320 mm (e.g. Coleman 424, Partner steel stove)</td></tr>
+          <tr><th data-i18n="specs.k8">Compartments</th><td data-i18n="specs.v8">Stove, cookware, tableware + bamboo cutlery drawer</td></tr>
+          <tr><th data-i18n="specs.k9">Shipping</th><td data-i18n="specs.v9">Worldwide, CE-regulated manufacturing</td></tr>
+        </tbody>
+      </table>
+      <p class="spectable__note" data-i18n="specs.note">Kitchen supplied without stove, cookware or tableware, so you can equip it exactly the way you cook.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICE / OFFER ============ -->
+<section class="offer" id="offer">
+  <div class="wrap offer__inner">
+    <div class="offer__text">
+      <p class="eyebrow" data-i18n="offer.eyebrow">Own one</p>
+      <h2 data-i18n="offer.h2">Ready to build your DOCK kitchen?</h2>
+      <p data-i18n="offer.p">Each kitchen is handbuilt to order and shipped worldwide. No online checkout, no pushy funnel — just message us directly, ask anything, and we'll arrange the details and delivery to your door personally.</p>
+      <ul class="offer__list">
+        <li data-i18n="offer.l1">Personal advice on stove & equipment fit</li>
+        <li data-i18n="offer.l2">Worldwide shipping arranged for you</li>
+        <li data-i18n="offer.l3">Talk to the people who actually build it</li>
+      </ul>
+    </div>
+    <div class="offer__card">
+      <div class="pricecard">
+        <p class="pricecard__label" data-i18n="offer.card.label">The DOCK Camp Kitchen</p>
+        <div class="pricecard__price">€990 <span data-i18n="offer.card.vat">excl. VAT</span></div>
+        <p class="pricecard__sub" data-i18n="offer.card.sub">Complete kitchen in a Zarges® K470 box</p>
+        <a class="btn btn--wa btn--lg btn--block" data-cta="whatsapp" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.2-.2.2-.3.3-.5.1-.2.1-.4 0-.5 0-.1-.6-1.5-.8-2.1-.2-.5-.4-.4-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3M12 21.5c-1.7 0-3.3-.4-4.7-1.3l-3.3.9.9-3.2c-.9-1.5-1.4-3.2-1.4-4.9C3.5 7.3 7.3 3.5 12 3.5s8.5 3.8 8.5 8.5-3.8 9.5-8.5 9.5m0-19C6.2 2.5 1.5 7.2 1.5 13c0 1.8.5 3.6 1.4 5.2L1.5 23l4.9-1.3c1.5.8 3.2 1.3 5 1.3h.1c5.8 0 10.5-4.7 10.5-10.5S17.8 2.5 12 2.5"/></svg>
+          <span data-i18n="offer.card.wa">Order via WhatsApp</span>
+        </a>
+        <a class="btn btn--outline btn--block" data-cta="email"><span data-i18n="offer.card.email">Or send an e-mail</span></a>
+        <p class="pricecard__reply" data-i18n="offer.card.reply">We usually reply within a day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACCESSORIES / SECONDARY ============ -->
+<section class="section section--light" id="accessories">
+  <div class="wrap">
+    <div class="section__head">
+      <p class="eyebrow" data-i18n="acc.eyebrow">Complete the system</p>
+      <h2 data-i18n="acc.h2">Accessories for your aluminium boxes</h2>
+      <p class="section__lead" data-i18n="acc.lead">Built to fit Zarges®, Alutec®, Alubox® and Defender® cases — ask us which size suits yours.</p>
+    </div>
+    <div class="cards2">
+      <article class="pcard">
+        <div class="pcard__media"><img src="assets/img/casetop.png" alt="DOCK bamboo case top for aluminium boxes" loading="lazy" /></div>
+        <div class="pcard__body">
+          <h3 data-i18n="acc.top.h">Bamboo Case Top</h3>
+          <p data-i18n="acc.top.p">Turn any aluminium box into a work surface or seat. A solid organic-bamboo lid that clicks onto the top of your case.</p>
+          <a class="btn btn--outline" data-cta="whatsapp-top" target="_blank" rel="noopener" data-i18n="acc.top.cta">Ask about the Case Top</a>
+        </div>
+      </article>
+      <article class="pcard">
+        <div class="pcard__media"><img src="assets/img/trolley.png" alt="DOCK trolley carrying a Zarges K470 box" loading="lazy" /></div>
+        <div class="pcard__body">
+          <h3 data-i18n="acc.trolley.h">Box Trolley</h3>
+          <p data-i18n="acc.trolley.p">Move a fully-loaded case over grass, gravel and sand on big pneumatic wheels. Folds flat when you're done.</p>
+          <a class="btn btn--outline" data-cta="whatsapp-trolley" target="_blank" rel="noopener" data-i18n="acc.trolley.cta">Ask about the Trolley</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section section--dark" id="faq">
+  <div class="wrap wrap--narrow">
+    <div class="section__head">
+      <p class="eyebrow" data-i18n="faq.eyebrow">Good to know</p>
+      <h2 data-i18n="faq.h2">Frequently asked questions</h2>
+    </div>
+    <div class="faq">
+      <details class="faq__item"><summary data-i18n="faq.q1">Which box is the kitchen built into?</summary><p data-i18n="faq.a1">A genuine Zarges® K470 (model 40564) aircraft-aluminium case — the reference standard for expedition storage. It stacks and straps down like any of your other cases.</p></details>
+      <details class="faq__item"><summary data-i18n="faq.q2">Is a stove or cookware included?</summary><p data-i18n="faq.a2">No — the kitchen is supplied empty so you can fit the stove and cookware you already love. There's dedicated space for a two-burner stove (up to 520 × 320 mm) and pans up to Ø 260 mm. We're happy to advise.</p></details>
+      <details class="faq__item"><summary data-i18n="faq.q3">How much does it weigh and how big is it?</summary><p data-i18n="faq.a3">16.5 kg empty. Closed it measures 420 × 600 × 400 mm; set up, the worktop sits at a comfortable 810 mm height.</p></details>
+      <details class="faq__item"><summary data-i18n="faq.q4">Do you ship internationally?</summary><p data-i18n="faq.a4">Yes. DOCK kitchens are already in use on five continents and we arrange worldwide shipping. Message us with your location for details.</p></details>
+      <details class="faq__item"><summary data-i18n="faq.q5">How do I order and pay?</summary><p data-i18n="faq.a5">There's no online checkout on purpose. You contact us via WhatsApp or e-mail, we confirm the details and the best way to pay and ship for your country. It's personal and transparent.</p></details>
+      <details class="faq__item"><summary data-i18n="faq.q6">How long does it take?</summary><p data-i18n="faq.a6">Each kitchen is handbuilt to order. Lead time depends on the current queue — message us and we'll give you an honest estimate right away.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA / CONTACT ============ -->
+<section class="finalcta" id="contact">
+  <div class="finalcta__bg" style="background-image:url('assets/img/owner-slovenia.jpg')"></div>
+  <div class="finalcta__scrim"></div>
+  <div class="wrap finalcta__content">
+    <h2 data-i18n="final.h2">Let's build your kitchen.</h2>
+    <p data-i18n="final.p">One message is all it takes. Ask a question, check availability, or start your order — you'll talk directly to the people who build every DOCK by hand.</p>
+    <div class="finalcta__btns">
+      <a class="btn btn--wa btn--lg" data-cta="whatsapp" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.2-.2.2-.3.3-.5.1-.2.1-.4 0-.5 0-.1-.6-1.5-.8-2.1-.2-.5-.4-.4-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3M12 21.5c-1.7 0-3.3-.4-4.7-1.3l-3.3.9.9-3.2c-.9-1.5-1.4-3.2-1.4-4.9C3.5 7.3 7.3 3.5 12 3.5s8.5 3.8 8.5 8.5-3.8 9.5-8.5 9.5m0-19C6.2 2.5 1.5 7.2 1.5 13c0 1.8.5 3.6 1.4 5.2L1.5 23l4.9-1.3c1.5.8 3.2 1.3 5 1.3h.1c5.8 0 10.5-4.7 10.5-10.5S17.8 2.5 12 2.5"/></svg>
+        <span data-i18n="final.wa">WhatsApp us</span>
+      </a>
+      <a class="btn btn--light btn--lg" data-cta="email"><span data-i18n="final.email">E-mail us</span></a>
+    </div>
+    <p class="finalcta__meta"><span data-i18n="final.meta">Direct line:</span> <a data-cta="whatsapp-plain" target="_blank" rel="noopener">+31 6 12 34 56 78</a> · <a href="mailto:info@dockoutdoors.com">info@dockoutdoors.com</a></p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div class="footer__brand">
+      <img src="assets/img/logo.png" alt="DOCK Outdoors" class="footer__logo" />
+      <p data-i18n="footer.tag">Outdoor equipment that carries the spirit of adventure to new frontiers. Handbuilt in the Netherlands.</p>
+    </div>
+    <div class="footer__col">
+      <h4 data-i18n="footer.explore">Explore</h4>
+      <a href="#kitchen" data-i18n="nav.kitchen">The Kitchen</a>
+      <a href="#features" data-i18n="nav.features">Features</a>
+      <a href="#gallery" data-i18n="nav.gallery">Owners</a>
+      <a href="#specs" data-i18n="nav.specs">Specs</a>
+      <a href="#accessories" data-i18n="nav.accessories">Accessories</a>
+    </div>
+    <div class="footer__col">
+      <h4 data-i18n="footer.contact">Contact</h4>
+      <a data-cta="whatsapp-plain" target="_blank" rel="noopener">WhatsApp: +31 6 12 34 56 78</a>
+      <a href="mailto:info@dockoutdoors.com">info@dockoutdoors.com</a>
+      <div class="footer__social">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><img src="assets/img/social-facebook.png" alt="Facebook" /></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/img/social-instagram.png" alt="Instagram" /></a>
+        <a href="https://www.pinterest.com/" target="_blank" rel="noopener" aria-label="Pinterest"><img src="assets/img/social-pinterest.png" alt="Pinterest" /></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bar">
+    <span>© <span id="year"></span> DOCK Outdoors</span>
+    <span data-i18n="footer.legal">CE-regulated manufacturing · Shipped worldwide</span>
+  </div>
+</footer>
+
+<!-- Floating mobile WhatsApp button -->
+<a class="fab" data-cta="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.2-.2.2-.3.3-.5.1-.2.1-.4 0-.5 0-.1-.6-1.5-.8-2.1-.2-.5-.4-.4-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3M12 21.5c-1.7 0-3.3-.4-4.7-1.3l-3.3.9.9-3.2c-.9-1.5-1.4-3.2-1.4-4.9C3.5 7.3 7.3 3.5 12 3.5s8.5 3.8 8.5 8.5-3.8 9.5-8.5 9.5m0-19C6.2 2.5 1.5 7.2 1.5 13c0 1.8.5 3.6 1.4 5.2L1.5 23l4.9-1.3c1.5.8 3.2 1.3 5 1.3h.1c5.8 0 10.5-4.7 10.5-10.5S17.8 2.5 12 2.5"/></svg>
+</a>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
