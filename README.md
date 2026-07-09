@@ -1,7 +1,7 @@
 # DOCK Outdoors — One-Pager Landing Page
 
 Eine dreisprachige (EN / DE / NL) Verkaufs-Landingpage für die DOCK Campingküche.
-Fokus: die Küche. Trolley & Case Top sind sekundär eingebunden. Kein Online-Checkout —
+Fokus: die Küche. Der Case Top ist sekundär eingebunden. Kein Online-Checkout —
 alle Aktionen führen zu **WhatsApp** oder **E-Mail**.
 
 ## Projektstruktur

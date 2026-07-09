@@ -120,9 +120,6 @@ window.I18N = {
     "acc.top.h": "Bamboo Case Top",
     "acc.top.p": "Turn any aluminium box into a work surface or seat. A solid organic-bamboo lid that clicks onto the top of your case.",
     "acc.top.cta": "Ask about the Case Top",
-    "acc.trolley.h": "Box Trolley",
-    "acc.trolley.p": "Move a fully-loaded case over grass, gravel and sand on big pneumatic wheels. Folds flat when you're done.",
-    "acc.trolley.cta": "Ask about the Trolley",
 
     "faq.eyebrow": "Good to know",
     "faq.h2": "Frequently asked questions",
@@ -152,7 +149,6 @@ window.I18N = {
 
     "wa.msg": "Hi DOCK Outdoors! I'm interested in the Camp Kitchen. Could you tell me more about ordering and delivery?",
     "wa.msgTop": "Hi DOCK Outdoors! I'd like to know more about the Bamboo Case Top.",
-    "wa.msgTrolley": "Hi DOCK Outdoors! I'd like to know more about the Box Trolley.",
     "email.subject": "Enquiry: DOCK Camp Kitchen",
     "email.body": "Hi DOCK Outdoors,%0D%0A%0D%0AI'm interested in the Camp Kitchen and would like to know more about ordering and delivery.%0D%0A%0D%0AThanks!"
   },
@@ -266,9 +262,6 @@ window.I18N = {
     "acc.top.h": "Bambus Case Top",
     "acc.top.p": "Macht aus jeder Aluminiumbox eine Arbeitsfläche oder Sitzgelegenheit. Ein massiver Bio-Bambus-Deckel, der oben auf deine Box klickt.",
     "acc.top.cta": "Zum Case Top fragen",
-    "acc.trolley.h": "Box-Trolley",
-    "acc.trolley.p": "Bewegt eine voll beladene Box über Gras, Schotter und Sand auf großen Lufträdern. Klappt flach zusammen, wenn du fertig bist.",
-    "acc.trolley.cta": "Zum Trolley fragen",
 
     "faq.eyebrow": "Gut zu wissen",
     "faq.h2": "Häufige Fragen",
@@ -298,7 +291,6 @@ window.I18N = {
 
     "wa.msg": "Hallo DOCK Outdoors! Ich interessiere mich für die Campingküche. Könnt ihr mir mehr zu Bestellung und Lieferung sagen?",
     "wa.msgTop": "Hallo DOCK Outdoors! Ich hätte gern mehr Infos zum Bambus Case Top.",
-    "wa.msgTrolley": "Hallo DOCK Outdoors! Ich hätte gern mehr Infos zum Box-Trolley.",
     "email.subject": "Anfrage: DOCK Campingküche",
     "email.body": "Hallo DOCK Outdoors,%0D%0A%0D%0Aich interessiere mich für die Campingküche und würde gern mehr über Bestellung und Lieferung erfahren.%0D%0A%0D%0AViele Grüße!"
   },
@@ -412,9 +404,6 @@ window.I18N = {
     "acc.top.h": "Bamboe Case Top",
     "acc.top.p": "Maak van elke aluminiumbox een werkblad of zitplek. Een stevig biologisch-bamboe deksel dat bovenop je box klikt.",
     "acc.top.cta": "Vraag naar de Case Top",
-    "acc.trolley.h": "Box-trolley",
-    "acc.trolley.p": "Verplaats een volgeladen box over gras, grind en zand op grote luchtbanden. Vouwt plat samen als je klaar bent.",
-    "acc.trolley.cta": "Vraag naar de Trolley",
 
     "faq.eyebrow": "Goed om te weten",
     "faq.h2": "Veelgestelde vragen",
@@ -444,7 +433,6 @@ window.I18N = {
 
     "wa.msg": "Hoi DOCK Outdoors! Ik heb interesse in de Kampeerkeuken. Kunnen jullie me meer vertellen over bestellen en levering?",
     "wa.msgTop": "Hoi DOCK Outdoors! Ik wil graag meer weten over de Bamboe Case Top.",
-    "wa.msgTrolley": "Hoi DOCK Outdoors! Ik wil graag meer weten over de Box-trolley.",
     "email.subject": "Aanvraag: DOCK Kampeerkeuken",
     "email.body": "Hoi DOCK Outdoors,%0D%0A%0D%0AIk heb interesse in de Kampeerkeuken en wil graag meer weten over bestellen en levering.%0D%0A%0D%0AGroet!"
   }

@@ -49,8 +49,6 @@
           el.href = waLink(t("wa.msg", lang)); break;
         case "whatsapp-top":
           el.href = waLink(t("wa.msgTop", lang)); break;
-        case "whatsapp-trolley":
-          el.href = waLink(t("wa.msgTrolley", lang)); break;
         case "whatsapp-plain":
           el.href = "https://wa.me/" + C.phone; break;
         case "email":

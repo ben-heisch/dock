@@ -280,7 +280,7 @@ p{ margin:0 0 1rem; }
 .pricecard__reply{ font-size:.82rem; color:var(--ink-soft); margin:.4rem 0 0; }
 
 /* ---------- ACCESSORY CARDS ---------- */
-.cards2{ display:grid; grid-template-columns:1fr 1fr; gap:1.6rem; max-width:940px; margin:0 auto; }
+.cards2{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,440px)); gap:1.6rem; justify-content:center; max-width:940px; margin:0 auto; }
 .pcard{ background:#fff; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-soft); display:flex; flex-direction:column; border:1px solid var(--line-dark); }
 .pcard__media{ background:linear-gradient(160deg,#eee7d9,#dcd3c2); aspect-ratio:16/11; display:grid; place-items:center; padding:1.6rem; }
 .pcard__media img{ max-height:100%; width:auto; filter:drop-shadow(0 16px 26px rgba(0,0,0,.28)); }
