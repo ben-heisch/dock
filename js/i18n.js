@@ -4,9 +4,9 @@
    =================================================================== */
 
 window.CONTACT = {
-  phone: "31612345678",              // WhatsApp number, digits only
-  phoneDisplay: "+31 6 12 34 56 78",
-  email: "info@dockoutdoors.com"
+  phone: "31644523965",              // WhatsApp number, digits only
+  phoneDisplay: "+31 6 44 52 39 65",
+  email: "contactus@dockoutdoors.com"
 };
 
 window.I18N = {
@@ -34,7 +34,6 @@ window.I18N = {
 
     "trust.a": "Indestructible Zarges® shell",
     "trust.b": "Shipped worldwide",
-    "trust.c": "CE-regulated manufacturing",
     "trust.d": "Personal, direct contact",
     "trust.e": "Built to last a lifetime",
 
@@ -98,7 +97,7 @@ window.I18N = {
     "specs.k6": "Cookware capacity",      "specs.v6": "Pans up to Ø 260 mm",
     "specs.k7": "Stove space",            "specs.v7": "Up to 520 × 320 mm (e.g. Coleman 424, Partner steel stove)",
     "specs.k8": "Compartments",          "specs.v8": "Stove, cookware, tableware + bamboo cutlery drawer",
-    "specs.k9": "Shipping",               "specs.v9": "Worldwide, CE-regulated manufacturing",
+    "specs.k9": "Shipping",               "specs.v9": "Worldwide",
     "specs.note": "Kitchen supplied without stove, cookware or tableware, so you can equip it exactly the way you cook.",
 
     "offer.eyebrow": "Own one",
@@ -145,7 +144,7 @@ window.I18N = {
     "footer.tag": "Outdoor equipment that carries the spirit of adventure to new frontiers. Handbuilt in the Netherlands.",
     "footer.explore": "Explore",
     "footer.contact": "Contact",
-    "footer.legal": "CE-regulated manufacturing · Shipped worldwide",
+    "footer.legal": "Shipped worldwide",
 
     "wa.msg": "Hi DOCK Outdoors! I'm interested in the Camp Kitchen. Could you tell me more about ordering and delivery?",
     "wa.msgTop": "Hi DOCK Outdoors! I'd like to know more about the Bamboo Case Top.",
@@ -176,7 +175,6 @@ window.I18N = {
 
     "trust.a": "Unverwüstliche Zarges®-Box",
     "trust.b": "Weltweiter Versand",
-    "trust.c": "CE-konforme Fertigung",
     "trust.d": "Persönlicher, direkter Kontakt",
     "trust.e": "Gebaut für ein Leben lang",
 
@@ -240,7 +238,7 @@ window.I18N = {
     "specs.k6": "Kochgeschirr",           "specs.v6": "Pfannen bis Ø 260 mm",
     "specs.k7": "Platz für den Kocher",   "specs.v7": "Bis 520 × 320 mm (z. B. Coleman 424, Partner Stahlkocher)",
     "specs.k8": "Fächer",                 "specs.v8": "Kocher, Kochgeschirr, Geschirr + Bambus-Besteckschublade",
-    "specs.k9": "Versand",                "specs.v9": "Weltweit, CE-konforme Fertigung",
+    "specs.k9": "Versand",                "specs.v9": "Weltweit",
     "specs.note": "Die Küche wird ohne Kocher, Kochgeschirr und Geschirr geliefert — so rüstest du sie genau so aus, wie du kochst.",
 
     "offer.eyebrow": "Hol dir eine",
@@ -287,7 +285,7 @@ window.I18N = {
     "footer.tag": "Outdoor-Ausrüstung, die den Geist des Abenteuers zu neuen Grenzen trägt. Handgefertigt in den Niederlanden.",
     "footer.explore": "Entdecken",
     "footer.contact": "Kontakt",
-    "footer.legal": "CE-konforme Fertigung · Weltweiter Versand",
+    "footer.legal": "Weltweiter Versand",
 
     "wa.msg": "Hallo DOCK Outdoors! Ich interessiere mich für die Campingküche. Könnt ihr mir mehr zu Bestellung und Lieferung sagen?",
     "wa.msgTop": "Hallo DOCK Outdoors! Ich hätte gern mehr Infos zum Bambus Case Top.",
@@ -318,7 +316,6 @@ window.I18N = {
 
     "trust.a": "Onverwoestbare Zarges®-box",
     "trust.b": "Wereldwijde verzending",
-    "trust.c": "CE-gereguleerde productie",
     "trust.d": "Persoonlijk, direct contact",
     "trust.e": "Gemaakt voor een leven lang",
 
@@ -382,7 +379,7 @@ window.I18N = {
     "specs.k6": "Pannen",                 "specs.v6": "Pannen tot Ø 260 mm",
     "specs.k7": "Ruimte voor de brander", "specs.v7": "Tot 520 × 320 mm (bijv. Coleman 424, Partner stalen brander)",
     "specs.k8": "Vakken",                 "specs.v8": "Brander, pannen, servies + bamboe besteklade",
-    "specs.k9": "Verzending",             "specs.v9": "Wereldwijd, CE-gereguleerde productie",
+    "specs.k9": "Verzending",             "specs.v9": "Wereldwijd",
     "specs.note": "De keuken wordt geleverd zonder brander, pannen of servies, zodat je hem precies inricht zoals jij kookt.",
 
     "offer.eyebrow": "Maak er een van jou",
@@ -429,7 +426,7 @@ window.I18N = {
     "footer.tag": "Outdoor-uitrusting die de geest van avontuur naar nieuwe grenzen draagt. Handgemaakt in Nederland.",
     "footer.explore": "Ontdek",
     "footer.contact": "Contact",
-    "footer.legal": "CE-gereguleerde productie · Wereldwijde verzending",
+    "footer.legal": "Wereldwijde verzending",
 
     "wa.msg": "Hoi DOCK Outdoors! Ik heb interesse in de Kampeerkeuken. Kunnen jullie me meer vertellen over bestellen en levering?",
     "wa.msgTop": "Hoi DOCK Outdoors! Ik wil graag meer weten over de Bamboe Case Top.",

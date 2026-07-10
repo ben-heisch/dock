@@ -39,14 +39,13 @@ In **`js/i18n.js`** ganz oben:
 
 ```js
 window.CONTACT = {
-  phone: "31612345678",              // WhatsApp-Nummer, nur Ziffern, mit Ländercode
-  phoneDisplay: "+31 6 12 34 56 78", // wie sie angezeigt wird
-  email: "info@dockoutdoors.com"
+  phone: "31644523965",              // WhatsApp-Nummer, nur Ziffern, mit Ländercode
+  phoneDisplay: "+31 6 44 52 39 65", // wie sie angezeigt wird
+  email: "contactus@dockoutdoors.com"
 };
 ```
-> Die aktuell hinterlegte Nummer `+31 6 12345678` ist ein Platzhalter aus unserem
-> Gespräch — bitte durch die echte Geschäftsnummer ersetzen. `phoneDisplay` erscheint
-> im Footer/Kontaktbereich zusätzlich als Text (dort ggf. auch anpassen in `index.html`).
+> `phoneDisplay` erscheint im Footer/Kontaktbereich zusätzlich als Text — wenn du die
+> Nummer änderst, passe sie auch dort in `index.html` an (drei Stellen).
 
 ### 2) Preis
 Steht in `index.html` (Suche nach `€990`) und ist zusätzlich in den FAQ/Angebotstexten
@@ -76,7 +75,7 @@ ersetzen. Die Galerie-Bilder werden in `index.html` im Abschnitt `#gallery` refe
   inkl. schwebendem WhatsApp-Button auf Mobil und vorausgefüllter Nachricht.
 - **Social Proof**: echte Owner-Galerie mit Länder-Captions + „im Einsatz auf 5 Kontinenten",
   Länderflaggen-Leiste, Kennzahlen (5 Kontinente, 20+ Länder, seit 2016).
-- **Trust-Elemente**: unverwüstliche Zarges®-Box, CE-Fertigung, weltweiter Versand,
+- **Trust-Elemente**: unverwüstliche Zarges®-Box, weltweiter Versand,
   „gebaut für ein Leben lang", persönlicher Direktkontakt.
 - **Einwandbehandlung**: technische Daten, „was ist (nicht) dabei", ausführliche FAQ.
 - **Klarer Funnel**: Preis wird offen gezeigt (qualifiziert Anfragen), Abschluss bewusst
@@ -87,6 +86,6 @@ ersetzen. Die Galerie-Bilder werden in `index.html` im Abschnitt `#gallery` refe
 
 - Schrift „Oswald" + „Inter" werden von Google Fonts geladen (Internet nötig). Ohne
   Internet greift automatisch eine System-Schrift.
-- Die WhatsApp-Nummer ist ein Platzhalter — vor dem Livegang ersetzen.
+- Kontakt: WhatsApp `+31 6 44 52 39 65` und `contactus@dockoutdoors.com` (in `js/i18n.js` gepflegt).
 - Marken wie Zarges®, Alutec®, Alubox®, Defender®, Coleman gehören ihren jeweiligen
   Eigentümern; sie werden nur zur Kompatibilitätsbeschreibung genannt.
