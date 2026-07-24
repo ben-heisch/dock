@@ -206,6 +206,44 @@
     });
   })();
 
+  /* ---------- conversion click tracking ----------
+     Sends a "contact_click" event whenever a WhatsApp or e-mail CTA is
+     clicked. It is vendor-neutral:
+       • Cloudflare Zaraz  → window.zaraz.track(...)   (recommended, free)
+       • Google Analytics  → gtag('event', ...)         (if ever added)
+       • GTM / dataLayer   → dataLayer.push(...)         (if ever added)
+     If none of these are present, nothing happens (no errors). */
+  function track(name, props) {
+    try {
+      if (window.zaraz && typeof window.zaraz.track === "function") window.zaraz.track(name, props);
+      if (typeof window.gtag === "function") window.gtag("event", name, props);
+      if (Array.isArray(window.dataLayer)) window.dataLayer.push(Object.assign({ event: name }, props));
+    } catch (e) {}
+  }
+
+  function placementOf(el) {
+    if (el.classList.contains("fab")) return "floating_button";
+    if (el.closest(".hero")) return "hero";
+    if (el.closest(".nav")) return "nav";
+    if (el.closest(".offer")) return "price_section";
+    if (el.closest(".finalcta")) return "final_cta";
+    if (el.closest(".footer")) return "footer";
+    var sec = el.closest("section[id]");
+    return sec ? sec.id : "other";
+  }
+
+  document.querySelectorAll("[data-cta]").forEach(function (el) {
+    el.addEventListener("click", function () {
+      var type = el.getAttribute("data-cta") || "";
+      track("contact_click", {
+        method: /email/.test(type) ? "email" : "whatsapp",
+        product: /top/.test(type) ? "case_top" : "kitchen",
+        placement: placementOf(el),
+        language: document.documentElement.lang
+      });
+    });
+  });
+
   /* ---------- year ---------- */
   var y = document.getElementById("year");
   if (y) y.textContent = new Date().getFullYear();

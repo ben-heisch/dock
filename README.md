@@ -82,6 +82,32 @@ ersetzen. Die Galerie-Bilder werden in `index.html` im Abschnitt `#gallery` refe
   über persönlichen Kontakt statt Warenkorb.
 - **SEO/Sharing**: Title, Meta-Description und Open-Graph-Tags sind gesetzt.
 
+## Analytics / Klick-Tracking
+
+Die Seite meldet jeden Klick auf einen **WhatsApp- oder E-Mail-Button** als Event
+`contact_click` (in `js/main.js`). Das ist deine wichtigste Kennzahl: wie viele
+Anfragen die Seite erzeugt. Jedes Event enthält:
+
+| Feld | Werte |
+|---|---|
+| `method` | `whatsapp` \| `email` |
+| `product` | `kitchen` \| `case_top` |
+| `placement` | `hero`, `nav`, `price_section`, `final_cta`, `footer`, `floating_button`, `accessories` |
+| `language` | `en` \| `de` \| `nl` |
+
+Das Tracking ist herstellerneutral und meldet automatisch an das, was vorhanden ist —
+ohne Tool passiert nichts (keine Fehler):
+
+- **Cloudflare Zaraz** → `zaraz.track()` *(empfohlen, kostenlos, kein Code nötig)*
+- Google Analytics (`gtag`) oder GTM (`dataLayer`), falls du sie später einbindest
+
+**So siehst du die Events in Cloudflare:**
+1. Cloudflare Dashboard → **Zaraz** → für die Domain aktivieren (Free-Tier).
+2. Zaraz erfasst die `zaraz.track("contact_click", …)`-Aufrufe automatisch; du kannst
+   sie dort einsehen und optional an andere Tools weiterleiten.
+3. Für reine Seitenaufrufe zusätzlich **Web Analytics** aktivieren (siehe oben) —
+   das braucht kein Cookie-Banner.
+
 ## Hinweise
 
 - Schrift „Oswald" + „Inter" werden von Google Fonts geladen (Internet nötig). Ohne
