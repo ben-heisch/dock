@@ -1,0 +1,5 @@
+# First-party click pixel: any /px/... hit is rewritten (200) to /px.txt.
+# The URL the visitor's browser requested (e.g. /px/whatsapp/hero) is what
+# Cloudflare logs, so clicks are countable under Analytics -> HTTP Traffic
+# by filtering the path "/px/". No cookies, no third party, no consent banner.
+/px/*  /px.txt  200

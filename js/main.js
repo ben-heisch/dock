@@ -212,19 +212,20 @@
      1) A first-party "pixel" request to /px/<method>/<placement>  (primary).
         Cloudflare counts these automatically — view them under
         Analytics → HTTP Traffic, filtered by path "/px/". No third party,
-        no cookies, no consent banner. Served by functions/px/[[path]].js (204).
+        no cookies, no consent banner. /px/* is rewritten to /px.txt (200)
+        via the _redirects file.
 
      2) A vendor-neutral event, in case a tag manager is ever added:
         Cloudflare Zaraz (zaraz.track), Google Analytics (gtag) or GTM (dataLayer).
         If none are present, nothing happens (no errors). */
   function track(name, props) {
-    // 1) first-party Cloudflare pixel
+    // 1) first-party Cloudflare pixel (GET, so it maps cleanly to the /px.txt rewrite)
     try {
-      var path = "/px/" + (props.method || "click") + "/" + (props.placement || "other");
-      var qs = "?product=" + encodeURIComponent(props.product || "") +
-               "&lang=" + encodeURIComponent(props.language || "");
-      if (navigator.sendBeacon) navigator.sendBeacon(path + qs);
-      else { var i = new Image(); i.src = path + qs; }
+      var url = "/px/" + (props.method || "click") + "/" + (props.placement || "other") +
+                "?product=" + encodeURIComponent(props.product || "") +
+                "&lang=" + encodeURIComponent(props.language || "");
+      if (window.fetch) fetch(url, { method: "GET", keepalive: true, mode: "no-cors", cache: "no-store" }).catch(function () {});
+      else { var i = new Image(); i.src = url; }
     } catch (e) {}
     // 2) optional tag-manager event
     try {
