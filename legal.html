@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legal & Privacy — DOCK Outdoors</title>
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#14171a" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/img/logo.png" />
+  <style>
+    .legalhead{ position:sticky; top:0; z-index:50; background:rgba(20,23,26,.92); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+    .legalhead__in{ max-width:900px; margin:0 auto; padding:.7rem 24px; display:flex; align-items:center; gap:1rem; }
+    .legalhead img{ height:30px; filter:invert(1) brightness(1.4); }
+    .legalhead .back{ margin-left:auto; font-family:var(--font-head); text-transform:uppercase; letter-spacing:.08em; font-size:.82rem; color:var(--text-soft); }
+    .legalhead .back:hover{ color:#fff; }
+    .legaldoc{ padding:3rem 0 4rem; }
+    .legaldoc h1{ font-size:clamp(2rem,5vw,3rem); }
+    .legaldoc h2{ font-size:1.5rem; margin-top:2.6rem; padding-top:1.6rem; border-top:1px solid var(--line-dark); }
+    .legaldoc h3{ font-size:1.08rem; margin-top:1.6rem; color:var(--ink); }
+    .legaldoc p, .legaldoc li{ color:var(--ink-soft); }
+    .legaldoc a{ color:var(--bamboo-deep); text-decoration:underline; }
+    .legaldoc ul{ padding-left:1.2rem; display:grid; gap:.5rem; }
+    .legaldoc .addr{ background:#fff; border:1px solid var(--line-dark); border-radius:12px; padding:1.2rem 1.4rem; margin:1rem 0; }
+    .legaldoc .addr div{ margin:.15rem 0; color:var(--ink); }
+    .legaldoc .ph{ background:#fdeccd; color:#6b4a12; padding:.05em .35em; border-radius:4px; font-weight:600; }
+    .legaldoc .updated{ margin-top:2.4rem; font-size:.85rem; color:var(--ink-soft); font-style:italic; }
+    .lg{ display:none; }
+    .lg.is-on{ display:block; }
+    .langswitch__btn{ color:var(--text-soft); }
+  </style>
+</head>
+<body>
+
+<header class="legalhead">
+  <div class="legalhead__in">
+    <a href="index.html" aria-label="DOCK Outdoors home"><img src="assets/img/logo.png" alt="DOCK Outdoors" /></a>
+    <div class="langswitch" role="group" aria-label="Language">
+      <button data-lang="en" class="langswitch__btn">EN</button>
+      <button data-lang="de" class="langswitch__btn">DE</button>
+      <button data-lang="nl" class="langswitch__btn">NL</button>
+    </div>
+    <a class="back" href="index.html">← <span class="t-back">Back to site</span></a>
+  </div>
+</header>
+
+<main class="section section--light legaldoc">
+  <div class="wrap wrap--narrow">
+
+    <!-- ============ COLOFON / LEGAL INFO ============ -->
+    <section id="colofon">
+      <div class="lg" data-lang="en">
+        <h1>Legal notice &amp; Privacy</h1>
+        <h2>Legal information (colofon)</h2>
+        <p>This website (dockoutdoors.camp) is operated by:</p>
+        <div class="addr">
+          <div><strong>DOCK Outdoors</strong> — trade name of a sole proprietorship (<em>eenmanszaak</em>) established in the Netherlands.</div>
+          <div>Owner: <span class="ph">[OWNER FULL NAME]</span></div>
+          <div>Address: <span class="ph">[STREET + NO.]</span>, <span class="ph">[POSTCODE]</span> <span class="ph">[CITY]</span>, The Netherlands</div>
+          <div>E-mail: <a href="mailto:contactus@dockoutdoors.com">contactus@dockoutdoors.com</a></div>
+          <div>Phone / WhatsApp: +31 6 44 52 39 65</div>
+          <div>Chamber of Commerce (KvK): <span class="ph">[KVK NUMBER]</span></div>
+          <div>VAT ID (BTW-id): <span class="ph">[NL… B..]</span></div>
+        </div>
+        <p>Responsible for the content of this website is the owner named above.</p>
+      </div>
+
+      <div class="lg" data-lang="de">
+        <h1>Impressum &amp; Datenschutz</h1>
+        <h2>Anbieterkennzeichnung (Impressum)</h2>
+        <p>Diese Website (dockoutdoors.camp) wird betrieben von:</p>
+        <div class="addr">
+          <div><strong>DOCK Outdoors</strong> — Handelsname eines Einzelunternehmens (<em>eenmanszaak</em>) mit Sitz in den Niederlanden.</div>
+          <div>Inhaber: <span class="ph">[VOLLSTÄNDIGER NAME]</span></div>
+          <div>Anschrift: <span class="ph">[STRASSE + NR.]</span>, <span class="ph">[PLZ]</span> <span class="ph">[ORT]</span>, Niederlande</div>
+          <div>E-Mail: <a href="mailto:contactus@dockoutdoors.com">contactus@dockoutdoors.com</a></div>
+          <div>Telefon / WhatsApp: +31 6 44 52 39 65</div>
+          <div>Handelsregister (KvK): <span class="ph">[KVK-NUMMER]</span></div>
+          <div>USt-IdNr. (BTW-id): <span class="ph">[NL… B..]</span></div>
+        </div>
+        <p>Verantwortlich für den Inhalt dieser Website ist der oben genannte Inhaber.</p>
+      </div>
+
+      <div class="lg" data-lang="nl">
+        <h1>Colofon &amp; Privacy</h1>
+        <h2>Wettelijke informatie (colofon)</h2>
+        <p>Deze website (dockoutdoors.camp) wordt beheerd door:</p>
+        <div class="addr">
+          <div><strong>DOCK Outdoors</strong> — handelsnaam van een eenmanszaak gevestigd in Nederland.</div>
+          <div>Eigenaar: <span class="ph">[VOLLEDIGE NAAM]</span></div>
+          <div>Adres: <span class="ph">[STRAAT + NR.]</span>, <span class="ph">[POSTCODE]</span> <span class="ph">[PLAATS]</span>, Nederland</div>
+          <div>E-mail: <a href="mailto:contactus@dockoutdoors.com">contactus@dockoutdoors.com</a></div>
+          <div>Telefoon / WhatsApp: +31 6 44 52 39 65</div>
+          <div>KvK-nummer: <span class="ph">[KVK-NUMMER]</span></div>
+          <div>Btw-id: <span class="ph">[NL… B..]</span></div>
+        </div>
+        <p>Verantwoordelijk voor de inhoud van deze website is de bovengenoemde eigenaar.</p>
+      </div>
+    </section>
+
+    <!-- ============ PRIVACY ============ -->
+    <section id="privacy">
+      <div class="lg" data-lang="en">
+        <h2>Privacy statement</h2>
+        <p>The controller for the processing of your personal data is the business named in the colofon above. We only process personal data that is necessary to answer your enquiry and to operate this website securely.</p>
+        <h3>What we process and why</h3>
+        <ul>
+          <li><strong>Contact by e-mail or WhatsApp:</strong> the data you send us (e.g. name, contact details, your message). Purpose: to respond to and handle your request. Legal basis: steps taken at your request prior to a possible contract (Art. 6(1)(b) GDPR) and our legitimate interest in communicating with you (Art. 6(1)(f)). If you contact us via WhatsApp, your data is also processed by WhatsApp Ireland Ltd. / Meta under their own terms.</li>
+          <li><strong>Hosting &amp; security:</strong> our hosting provider Cloudflare, Inc. automatically processes technical data (e.g. IP address, browser type, time of request) in server logs to deliver and protect the site. Legal basis: legitimate interest in a secure, functioning website (Art. 6(1)(f)). A data-processing agreement is in place.</li>
+          <li><strong>Analytics:</strong> we use privacy-friendly, cookie-less analytics (Cloudflare Web Analytics) and count anonymous interaction events (e.g. a click on a contact button). No tracking cookies are set and no cross-site profile is created.</li>
+          <li><strong>Web fonts:</strong> fonts are hosted on our own server; no data is transferred to Google.</li>
+        </ul>
+        <h3>Recipients and transfers outside the EU</h3>
+        <p>Cloudflare may process data on servers that can be located outside the European Union; such transfers are covered by the EU Standard Contractual Clauses. We do not sell your data.</p>
+        <h3>Retention</h3>
+        <p>Enquiry data is kept only as long as needed to handle your request and to meet legal (e.g. tax) obligations, and is deleted afterwards.</p>
+        <h3>Your rights</h3>
+        <p>You have the right of access, rectification, erasure, restriction, objection and data portability, and you may withdraw consent at any time. You can also lodge a complaint with the Dutch Data Protection Authority (Autoriteit Persoonsgegevens, <a href="https://autoriteitpersoonsgegevens.nl" target="_blank" rel="noopener">autoriteitpersoonsgegevens.nl</a>). To exercise your rights, e-mail <a href="mailto:contactus@dockoutdoors.com">contactus@dockoutdoors.com</a>. No automated decision-making or profiling takes place.</p>
+      </div>
+
+      <div class="lg" data-lang="de">
+        <h2>Datenschutzerklärung</h2>
+        <p>Verantwortlicher für die Verarbeitung Ihrer personenbezogenen Daten ist das im Impressum genannte Unternehmen. Wir verarbeiten nur personenbezogene Daten, die zur Beantwortung Ihrer Anfrage und zum sicheren Betrieb dieser Website erforderlich sind.</p>
+        <h3>Was wir verarbeiten und warum</h3>
+        <ul>
+          <li><strong>Kontakt per E-Mail oder WhatsApp:</strong> die von Ihnen übermittelten Daten (z. B. Name, Kontaktdaten, Ihre Nachricht). Zweck: Bearbeitung und Beantwortung Ihrer Anfrage. Rechtsgrundlage: vorvertragliche Maßnahmen auf Ihre Anfrage (Art. 6 Abs. 1 lit. b DSGVO) sowie unser berechtigtes Interesse an der Kommunikation mit Ihnen (Art. 6 Abs. 1 lit. f). Bei Kontakt über WhatsApp werden Ihre Daten zusätzlich von WhatsApp Ireland Ltd. / Meta nach deren Bedingungen verarbeitet.</li>
+          <li><strong>Hosting &amp; Sicherheit:</strong> unser Hoster Cloudflare, Inc. verarbeitet automatisch technische Daten (z. B. IP-Adresse, Browsertyp, Zeitpunkt des Abrufs) in Server-Logs, um die Website auszuliefern und zu schützen. Rechtsgrundlage: berechtigtes Interesse an einer sicheren, funktionierenden Website (Art. 6 Abs. 1 lit. f). Ein Auftragsverarbeitungsvertrag besteht.</li>
+          <li><strong>Analyse:</strong> wir nutzen datenschutzfreundliche, cookielose Analyse (Cloudflare Web Analytics) und zählen anonyme Interaktions-Ereignisse (z. B. Klick auf einen Kontakt-Button). Es werden keine Tracking-Cookies gesetzt und kein seitenübergreifendes Profil erstellt.</li>
+          <li><strong>Schriftarten:</strong> Web-Schriften werden auf unserem eigenen Server gehostet; es werden keine Daten an Google übertragen.</li>
+        </ul>
+        <h3>Empfänger und Übermittlung in Drittländer</h3>
+        <p>Cloudflare kann Daten auf Servern verarbeiten, die außerhalb der EU liegen können; solche Übermittlungen sind durch die EU-Standardvertragsklauseln abgesichert. Wir verkaufen Ihre Daten nicht.</p>
+        <h3>Speicherdauer</h3>
+        <p>Anfragedaten werden nur so lange gespeichert, wie es zur Bearbeitung Ihrer Anfrage und zur Erfüllung gesetzlicher (z. B. steuerlicher) Pflichten erforderlich ist, und danach gelöscht.</p>
+        <h3>Ihre Rechte</h3>
+        <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch und Datenübertragbarkeit und können eine erteilte Einwilligung jederzeit widerrufen. Sie können sich zudem bei der niederländischen Datenschutzbehörde (Autoriteit Persoonsgegevens, <a href="https://autoriteitpersoonsgegevens.nl" target="_blank" rel="noopener">autoriteitpersoonsgegevens.nl</a>) beschweren. Zur Ausübung Ihrer Rechte schreiben Sie an <a href="mailto:contactus@dockoutdoors.com">contactus@dockoutdoors.com</a>. Eine automatisierte Entscheidungsfindung oder ein Profiling findet nicht statt.</p>
+      </div>
+
+      <div class="lg" data-lang="nl">
+        <h2>Privacyverklaring</h2>
+        <p>Verwerkingsverantwoordelijke voor de verwerking van uw persoonsgegevens is de onderneming genoemd in het colofon hierboven. Wij verwerken alleen persoonsgegevens die nodig zijn om uw vraag te beantwoorden en om deze website veilig te laten werken.</p>
+        <h3>Wat wij verwerken en waarom</h3>
+        <ul>
+          <li><strong>Contact via e-mail of WhatsApp:</strong> de gegevens die u ons stuurt (bijv. naam, contactgegevens, uw bericht). Doel: uw verzoek behandelen en beantwoorden. Grondslag: maatregelen op uw verzoek vóór een eventuele overeenkomst (art. 6 lid 1 sub b AVG) en ons gerechtvaardigd belang bij communicatie met u (art. 6 lid 1 sub f). Neemt u contact op via WhatsApp, dan worden uw gegevens ook door WhatsApp Ireland Ltd. / Meta verwerkt volgens hun eigen voorwaarden.</li>
+          <li><strong>Hosting &amp; beveiliging:</strong> onze hostingprovider Cloudflare, Inc. verwerkt automatisch technische gegevens (bijv. IP-adres, browsertype, tijdstip van het bezoek) in serverlogs om de site te leveren en te beveiligen. Grondslag: gerechtvaardigd belang bij een veilige, werkende website (art. 6 lid 1 sub f). Er is een verwerkersovereenkomst gesloten.</li>
+          <li><strong>Statistieken:</strong> wij gebruiken privacyvriendelijke, cookieloze statistieken (Cloudflare Web Analytics) en tellen anonieme interactie-gebeurtenissen (bijv. een klik op een contactknop). Er worden geen tracking-cookies geplaatst en er wordt geen profiel over websites heen opgebouwd.</li>
+          <li><strong>Lettertypen:</strong> weblettertypen worden op onze eigen server gehost; er worden geen gegevens naar Google gestuurd.</li>
+        </ul>
+        <h3>Ontvangers en doorgifte buiten de EU</h3>
+        <p>Cloudflare kan gegevens verwerken op servers die buiten de Europese Unie kunnen staan; deze doorgifte is gedekt door de EU-modelcontractbepalingen (SCC's). Wij verkopen uw gegevens niet.</p>
+        <h3>Bewaartermijn</h3>
+        <p>Gegevens uit uw aanvraag worden alleen bewaard zolang dat nodig is om uw verzoek te behandelen en om te voldoen aan wettelijke (bijv. fiscale) verplichtingen, en daarna verwijderd.</p>
+        <h3>Uw rechten</h3>
+        <p>U heeft recht op inzage, rectificatie, verwijdering, beperking, bezwaar en dataportabiliteit, en u kunt een gegeven toestemming altijd intrekken. U kunt ook een klacht indienen bij de Autoriteit Persoonsgegevens (<a href="https://autoriteitpersoonsgegevens.nl" target="_blank" rel="noopener">autoriteitpersoonsgegevens.nl</a>). Om uw rechten uit te oefenen, mail naar <a href="mailto:contactus@dockoutdoors.com">contactus@dockoutdoors.com</a>. Er vindt geen geautomatiseerde besluitvorming of profilering plaats.</p>
+      </div>
+    </section>
+
+    <!-- ============ COOKIES ============ -->
+    <section id="cookies">
+      <div class="lg" data-lang="en">
+        <h2>Cookies</h2>
+        <p>This website does <strong>not</strong> place tracking, advertising or analytics cookies, so no cookie-consent banner is required. Analytics are measured cookie-lessly via Cloudflare Web Analytics, without building a personal profile. Only technically necessary data may be stored by our host for security purposes.</p>
+        <p><em>Note: if marketing tools that use cookies (e.g. Google Analytics, Facebook Pixel) are added later, a consent banner will be required beforehand.</em></p>
+      </div>
+      <div class="lg" data-lang="de">
+        <h2>Cookies</h2>
+        <p>Diese Website setzt <strong>keine</strong> Tracking-, Werbe- oder Analyse-Cookies; ein Cookie-Consent-Banner ist daher nicht erforderlich. Die Reichweitenmessung erfolgt cookielos über Cloudflare Web Analytics, ohne ein persönliches Profil zu erstellen. Lediglich technisch notwendige Daten können durch unseren Hoster zu Sicherheitszwecken gespeichert werden.</p>
+        <p><em>Hinweis: Werden später Marketing-Tools mit Cookies (z. B. Google Analytics, Facebook Pixel) eingebunden, ist vorab ein Consent-Banner erforderlich.</em></p>
+      </div>
+      <div class="lg" data-lang="nl">
+        <h2>Cookies</h2>
+        <p>Deze website plaatst <strong>geen</strong> tracking-, advertentie- of analytische cookies; een cookie-toestemmingsbanner is daarom niet nodig. Statistieken worden cookieloos gemeten via Cloudflare Web Analytics, zonder een persoonlijk profiel op te bouwen. Alleen technisch noodzakelijke gegevens kunnen door onze host om veiligheidsredenen worden opgeslagen.</p>
+        <p><em>Let op: worden later marketingtools met cookies (bijv. Google Analytics, Facebook Pixel) toegevoegd, dan is vooraf een toestemmingsbanner vereist.</em></p>
+      </div>
+    </section>
+
+    <!-- ============ DISCLAIMER ============ -->
+    <section id="disclaimer">
+      <div class="lg" data-lang="en">
+        <h2>Disclaimer</h2>
+        <p>Brand names such as Zarges®, Alutec®, Alubox®, Defender® and Coleman are trademarks of their respective owners and are used solely to describe compatibility. We compile the content of this website with care but accept no liability for its completeness or accuracy. This website may contain links to external sites for whose content we are not responsible.</p>
+        <p class="updated">Last updated: July 2026</p>
+      </div>
+      <div class="lg" data-lang="de">
+        <h2>Haftungsausschluss</h2>
+        <p>Markennamen wie Zarges®, Alutec®, Alubox®, Defender® und Coleman sind Marken ihrer jeweiligen Inhaber und werden ausschließlich zur Beschreibung der Kompatibilität verwendet. Die Inhalte dieser Website werden mit Sorgfalt erstellt; für Vollständigkeit und Richtigkeit übernehmen wir jedoch keine Haftung. Diese Website kann Links zu externen Seiten enthalten, für deren Inhalte wir nicht verantwortlich sind.</p>
+        <p class="updated">Stand: Juli 2026</p>
+      </div>
+      <div class="lg" data-lang="nl">
+        <h2>Disclaimer</h2>
+        <p>Merknamen als Zarges®, Alutec®, Alubox®, Defender® en Coleman zijn handelsmerken van hun respectieve eigenaren en worden uitsluitend gebruikt om de compatibiliteit te beschrijven. Wij stellen de inhoud van deze website met zorg samen, maar aanvaarden geen aansprakelijkheid voor de volledigheid of juistheid ervan. Deze website kan links naar externe sites bevatten waarvoor wij niet verantwoordelijk zijn.</p>
+        <p class="updated">Laatst bijgewerkt: juli 2026</p>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<script>
+(function(){
+  var SUP=['en','de','nl'], DEF='en';
+  var backText={en:'Back to site',de:'Zur Website',nl:'Terug naar site'};
+  function cur(){ try{ var s=localStorage.getItem('dock_lang'); if(SUP.indexOf(s)>-1) return s; }catch(e){} return DEF; }
+  function apply(l){
+    if(SUP.indexOf(l)===-1) l=DEF;
+    document.documentElement.lang=l;
+    document.querySelectorAll('.lg').forEach(function(el){ el.classList.toggle('is-on', el.getAttribute('data-lang')===l); });
+    document.querySelectorAll('.langswitch__btn').forEach(function(b){ b.classList.toggle('is-active', b.getAttribute('data-lang')===l); });
+    var bt=document.querySelector('.t-back'); if(bt) bt.textContent=backText[l];
+    try{ localStorage.setItem('dock_lang', l); }catch(e){}
+  }
+  document.querySelectorAll('.langswitch__btn').forEach(function(b){ b.addEventListener('click', function(){ apply(b.getAttribute('data-lang')); }); });
+  apply(cur());
+})();
+</script>
+</body>
+</html>

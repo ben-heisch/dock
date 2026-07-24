@@ -82,31 +82,36 @@ ersetzen. Die Galerie-Bilder werden in `index.html` im Abschnitt `#gallery` refe
   über persönlichen Kontakt statt Warenkorb.
 - **SEO/Sharing**: Title, Meta-Description und Open-Graph-Tags sind gesetzt.
 
-## Analytics / Klick-Tracking
+## Analytics / Klick-Tracking (first-party, ohne Cookie-Banner)
 
-Die Seite meldet jeden Klick auf einen **WhatsApp- oder E-Mail-Button** als Event
-`contact_click` (in `js/main.js`). Das ist deine wichtigste Kennzahl: wie viele
-Anfragen die Seite erzeugt. Jedes Event enthält:
+Jeder Klick auf einen **WhatsApp- oder E-Mail-Button** sendet einen winzigen
+first-party „Pixel"-Aufruf an einen eigenen Pfad:
 
-| Feld | Werte |
-|---|---|
-| `method` | `whatsapp` \| `email` |
-| `product` | `kitchen` \| `case_top` |
-| `placement` | `hero`, `nav`, `price_section`, `final_cta`, `footer`, `floating_button`, `accessories` |
-| `language` | `en` \| `de` \| `nl` |
+```
+/px/<method>/<placement>?product=<…>&lang=<…>
+z. B.  /px/whatsapp/hero?product=kitchen&lang=de
+       /px/email/final_cta?product=kitchen&lang=en
+```
 
-Das Tracking ist herstellerneutral und meldet automatisch an das, was vorhanden ist —
-ohne Tool passiert nichts (keine Fehler):
+- `method` → `whatsapp` | `email`
+- `placement` → `hero`, `nav`, `price_section`, `final_cta`, `footer`, `floating_button`, `accessories`
+- `product` → `kitchen` | `case_top`  ·  `lang` → `en` | `de` | `nl`
 
-- **Cloudflare Zaraz** → `zaraz.track()` *(empfohlen, kostenlos, kein Code nötig)*
-- Google Analytics (`gtag`) oder GTM (`dataLayer`), falls du sie später einbindest
+Beantwortet wird der Aufruf von `functions/px/[[path]].js` (Cloudflare Pages Function)
+mit `204 No Content`. Es werden **keine Cookies gesetzt, keine Drittanbieter geladen,
+kein Consent-Banner** benötigt.
 
-**So siehst du die Events in Cloudflare:**
-1. Cloudflare Dashboard → **Zaraz** → für die Domain aktivieren (Free-Tier).
-2. Zaraz erfasst die `zaraz.track("contact_click", …)`-Aufrufe automatisch; du kannst
-   sie dort einsehen und optional an andere Tools weiterleiten.
-3. Für reine Seitenaufrufe zusätzlich **Web Analytics** aktivieren (siehe oben) —
-   das braucht kein Cookie-Banner.
+**So siehst du die Klicks in Cloudflare:**
+1. Dashboard → deine Domain → **Analytics → HTTP Traffic** (bzw. **Traffic**).
+2. Nach **Path** filtern, das `/px/` enthält → das ist die Zahl deiner Button-Klicks.
+   Über die einzelnen Pfade (`/px/whatsapp/hero` …) siehst du Methode + Platzierung.
+3. Für Besucher/Seitenaufrufe zusätzlich **Analytics → Web analytics** aktivieren
+   (ebenfalls ohne Cookie-Banner).
+
+> Optional: Der Code meldet denselben Klick zusätzlich als `contact_click`-Event an
+> einen Tag-Manager, **falls** vorhanden (Cloudflare Zaraz `zaraz.track`, Google
+> Analytics `gtag` oder GTM `dataLayer`). Ist keiner aktiv, passiert nichts — der
+> `/px/`-Pixel oben funktioniert unabhängig davon.
 
 ## Hinweise
 

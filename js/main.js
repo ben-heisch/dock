@@ -207,13 +207,26 @@
   })();
 
   /* ---------- conversion click tracking ----------
-     Sends a "contact_click" event whenever a WhatsApp or e-mail CTA is
-     clicked. It is vendor-neutral:
-       • Cloudflare Zaraz  → window.zaraz.track(...)   (recommended, free)
-       • Google Analytics  → gtag('event', ...)         (if ever added)
-       • GTM / dataLayer   → dataLayer.push(...)         (if ever added)
-     If none of these are present, nothing happens (no errors). */
+     Every WhatsApp / e-mail CTA click sends:
+
+     1) A first-party "pixel" request to /px/<method>/<placement>  (primary).
+        Cloudflare counts these automatically — view them under
+        Analytics → HTTP Traffic, filtered by path "/px/". No third party,
+        no cookies, no consent banner. Served by functions/px/[[path]].js (204).
+
+     2) A vendor-neutral event, in case a tag manager is ever added:
+        Cloudflare Zaraz (zaraz.track), Google Analytics (gtag) or GTM (dataLayer).
+        If none are present, nothing happens (no errors). */
   function track(name, props) {
+    // 1) first-party Cloudflare pixel
+    try {
+      var path = "/px/" + (props.method || "click") + "/" + (props.placement || "other");
+      var qs = "?product=" + encodeURIComponent(props.product || "") +
+               "&lang=" + encodeURIComponent(props.language || "");
+      if (navigator.sendBeacon) navigator.sendBeacon(path + qs);
+      else { var i = new Image(); i.src = path + qs; }
+    } catch (e) {}
+    // 2) optional tag-manager event
     try {
       if (window.zaraz && typeof window.zaraz.track === "function") window.zaraz.track(name, props);
       if (typeof window.gtag === "function") window.gtag("event", name, props);

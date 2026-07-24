@@ -145,6 +145,8 @@ window.I18N = {
     "footer.explore": "Explore",
     "footer.contact": "Contact",
     "footer.legal": "Shipped worldwide",
+    "footer.legalinfo": "Legal notice",
+    "footer.privacy": "Privacy",
 
     "wa.msg": "Hi DOCK Outdoors! I'm interested in the Camp Kitchen. Could you tell me more about ordering and delivery?",
     "wa.msgTop": "Hi DOCK Outdoors! I'd like to know more about the Bamboo Case Top.",
@@ -286,6 +288,8 @@ window.I18N = {
     "footer.explore": "Entdecken",
     "footer.contact": "Kontakt",
     "footer.legal": "Weltweiter Versand",
+    "footer.legalinfo": "Impressum",
+    "footer.privacy": "Datenschutz",
 
     "wa.msg": "Hallo DOCK Outdoors! Ich interessiere mich für die Campingküche. Könnt ihr mir mehr zu Bestellung und Lieferung sagen?",
     "wa.msgTop": "Hallo DOCK Outdoors! Ich hätte gern mehr Infos zum Bambus Case Top.",
@@ -427,6 +431,8 @@ window.I18N = {
     "footer.explore": "Ontdek",
     "footer.contact": "Contact",
     "footer.legal": "Wereldwijde verzending",
+    "footer.legalinfo": "Colofon",
+    "footer.privacy": "Privacy",
 
     "wa.msg": "Hoi DOCK Outdoors! Ik heb interesse in de Kampeerkeuken. Kunnen jullie me meer vertellen over bestellen en levering?",
     "wa.msgTop": "Hoi DOCK Outdoors! Ik wil graag meer weten over de Bamboe Case Top.",

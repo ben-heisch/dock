@@ -1,7 +1,17 @@
 /* ===================================================================
    DOCK Outdoors — one-pager sales landing page
    Palette: charcoal + brushed aluminium + organic bamboo/amber accent
+   Fonts self-hosted (GDPR: no request to Google servers).
    =================================================================== */
+
+@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('../assets/fonts/inter-400.woff2') format('woff2');}
+@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url('../assets/fonts/inter-500.woff2') format('woff2');}
+@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url('../assets/fonts/inter-600.woff2') format('woff2');}
+@font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:swap;src:url('../assets/fonts/inter-700.woff2') format('woff2');}
+@font-face{font-family:'Oswald';font-style:normal;font-weight:400;font-display:swap;src:url('../assets/fonts/oswald-400.woff2') format('woff2');}
+@font-face{font-family:'Oswald';font-style:normal;font-weight:500;font-display:swap;src:url('../assets/fonts/oswald-500.woff2') format('woff2');}
+@font-face{font-family:'Oswald';font-style:normal;font-weight:600;font-display:swap;src:url('../assets/fonts/oswald-600.woff2') format('woff2');}
+@font-face{font-family:'Oswald';font-style:normal;font-weight:700;font-display:swap;src:url('../assets/fonts/oswald-700.woff2') format('woff2');}
 
 :root{
   --bg:            #14171a;   /* charcoal */
@@ -325,8 +335,11 @@ p{ margin:0 0 1rem; }
 .footer__social a:hover img{ transform:translateY(-3px); }
 .footer__bar{
   border-top:1px solid var(--line); padding:1.2rem 24px; display:flex; justify-content:space-between;
-  flex-wrap:wrap; gap:.5rem; max-width:var(--maxw); margin:0 auto; font-size:.82rem;
+  flex-wrap:wrap; gap:.5rem 1.2rem; max-width:var(--maxw); margin:0 auto; font-size:.82rem;
 }
+.footer__legal-links{ display:flex; gap:1.1rem; }
+.footer__legal-links a{ color:var(--text-soft); transition:color .15s; }
+.footer__legal-links a:hover{ color:var(--bamboo-2); }
 
 /* ---------- FAB ---------- */
 .fab{
